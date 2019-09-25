@@ -16,7 +16,7 @@
                             <label for="email" class="col-md-4 control-label">Account Key</label>
 
                             <div class="col-md-6">
-                                {{strtoupper($google_aoth_qr['secret']) ?? 0}}
+                                {{strtoupper($google_aoth_qr['secret'])}}
                             </div>
                         </div>
 
@@ -24,7 +24,7 @@
                             <label for="password" class="col-md-4 control-label">QR Code</label>
 
                             <div class="col-md-6">
-                                <img src="{{$google_aoth_qr['qr_code_url'] ?? 0}}">
+                                <img src="{{$google_aoth_qr['qr_code_url']}}">
                             </div>
                         </div>
 
