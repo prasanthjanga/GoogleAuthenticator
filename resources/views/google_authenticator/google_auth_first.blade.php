@@ -10,7 +10,7 @@
                 <div class="panel-body">
                     <form class="form-horizontal" method="POST" action="{{ route('google_auth_first') }}">
                         {{ csrf_field() }}
-                        <input type="hidden" name="account_key" value="{{strtoupper($google_aoth_qr['secret']) ?? 0}}">
+                        <input type="hidden" name="account_key" value="{{strtoupper($google_aoth_qr['secret'])}}">
 
                         <div class="form-group">
                             <label for="email" class="col-md-4 control-label">Account Key</label>

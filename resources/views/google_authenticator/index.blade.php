@@ -10,7 +10,7 @@
                 <div class="panel-body">
                     <form class="form-horizontal" method="POST" action="{{ route('google_auth_first') }}">
                         {{ csrf_field() }}
-                        <input type="hidden" name="account_key" value="{{strtoupper($google_aoth_qr['secret']) ?? 0}}">
+                        <input type="hidden" name="account_key" value="{{strtoupper($google_aoth_qr['secret'])}}">
 
                         <div class="form-group{{ $errors->has('otp') ? ' has-error' : '' }}">
                             <label for="otp" class="col-md-4 control-label">OTP</label>
