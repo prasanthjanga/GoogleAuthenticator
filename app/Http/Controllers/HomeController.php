@@ -53,7 +53,7 @@ class HomeController extends Controller
                 $google_aoth_qr['one_code'] == $request->otp) {
                 // echo $request->account_key;exit;
                     User::where('id', Auth::id())
-                    ->where('google_auth_code', '')
+                    ->where('google_auth_code','!=', null)
                     ->update(['google_auth_code'=>$request->account_key]);
                     
                     session(['google_auth_flag' => true]); //TO CHECK USER ENTERED OTP OR NOT
