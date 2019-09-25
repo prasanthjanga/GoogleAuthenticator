@@ -14,3 +14,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/google_auth_first', 'HomeController@google_auth_first')->name('google_auth_first');
+Route::post('/google_auth_first', 'HomeController@google_auth_first')->name('google_auth_first');
