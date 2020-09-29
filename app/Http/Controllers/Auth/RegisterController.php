@@ -66,7 +66,7 @@ class RegisterController extends Controller
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
-            'google_auth_code'=>'',
+            'google_auth_code'=>null,
         ]);
     }
 }
